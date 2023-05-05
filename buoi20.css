@@ -1,0 +1,150 @@
+
+.main{
+    background-image: url("https://cortex.qodeinteractive.com/wp-content/uploads/2017/06/h15-img-1a.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100vw;
+    height: 100%;
+}
+
+.head{
+    width: 80%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head .icon-1{
+    width: 45px;
+    height: 45px;
+    margin: 5%;
+}
+.head .icon-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ------ thanh MENU */
+
+.main{
+    position: relative;
+}
+.head .menu .menu-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: antiquewhite;
+    background-color: #41294a;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#check-box{
+    display: none;
+}
+#check-box:checked~.menu-bar{
+    visibility: visible;
+    opacity: 0.8;
+}
+.menu-bar .menu-content{
+    position: relative;
+}
+.menu-bar .menu-content i{
+    position: absolute;
+    top:-30vh;
+    right:-30vw;
+}
+
+
+.menu-bar .menu-content .cap1{
+}
+
+.menu-bar .menu-content .cap1 a{
+    font-style: none;
+    text-decoration: none;
+    font-family: Montserrat,sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+}
+.menu-bar .menu-content .cap1:hover a{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------- */
+
+
+.content {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.content .title{
+}
+
+.content .title h1 {
+        font-size: 120px;
+    font-weight: 700;
+    letter-spacing: -.06em;
+}
+.content .text{
+    padding-bottom: 100px;
+}
+
+.content .text h5{
+    font-family: Montserrat;
+    font-size: 21px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.content .text ul{
+    list-style-type: none;
+}
+.content .text ul{
+    padding-left: 0;
+}
+.content .text a{
+    color: aliceblue;
+    font-style: none;
+    text-decoration: none;
+}
+
+.content .text ul li a::before{
+    content: ''; /* mã Unicode của icon mũi tên */
+    color: #41ebdf;
+     font-family: FontAwesome; /* font chữ sử dụng để hiển thị icon */
+    margin-right: 5px; /* khoảng cách giữa icon và nội dung */
+    width: 0;
+    height: 6px;
+    transition: all 0.8s;
+    
+}
+
+.content .text ul li:hover a::before{
+    content: '\f178';
+    width: 6px;
+}
+
+
